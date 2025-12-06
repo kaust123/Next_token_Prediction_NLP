@@ -77,7 +77,7 @@ def check_devices():
     print(f"  python measure_performance.py --device {recommended}")
 
     if recommended == "cpu":
-        print(f"\n⚠️  Training on CPU will be significantly slower!")
+        print(f"\n Training on CPU will be significantly slower!")
         print(f"   Consider using:")
         print(f"   - Smaller model (--n-layer 4 --n-embd 256)")
         print(f"   - Smaller batch size (--batch-size 4)")
