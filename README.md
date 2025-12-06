@@ -2,7 +2,7 @@
 
 This repository contains a compact, sample-efficient language model for next-token prediction on Telugu and Marathi low-resource languages.
 
-## 📋 Project Structure
+Project Structure
 
 ```
 nlp_assignment/
@@ -26,7 +26,7 @@ nlp_assignment/
 └── README.md                  # This file
 ```
 
-## 🚀 Quick Start
+Quick Start
 
 ### 1. Environment Setup
 
@@ -43,7 +43,7 @@ pip install -r requirements.txt
 - Recommended: GPU with at least 8GB VRAM (CUDA compatible)
 - Minimum: CPU with 16GB RAM (slower training)
 
-### 2. Data Preprocessing (Optional)
+2. Data Preprocessing (Optional)
 
 The training script handles nested JSON automatically, but you can verify the data:
 
@@ -101,7 +101,7 @@ python train_small_gpt.py \
     --device cuda
 ```
 
-**Option B: Fine-tune pretrained multilingual model**
+Option B: Fine-tune pretrained multilingual model**
 ```bash
 python train_small_gpt.py \
     --train-file dataset/train_te.jsonl \
@@ -140,7 +140,7 @@ python evaluate.py \
 - Bits-per-token
 - Token-level accuracy
 
-### 6. Measure Performance
+6. Measure Performance
 
 ```bash
 # Measure efficiency metrics
@@ -158,7 +158,7 @@ python measure_performance.py \
 - Throughput (tokens/second)
 - Peak GPU memory usage
 
-### 7. Run Inference
+7. Run Inference
 
 ```bash
 # Generate predictions for test data
@@ -183,7 +183,7 @@ python sample_efficiency.py \
 # Train models on different data fractions and plot learning curves
 ```
 
-## 📊 Expected Performance
+Expected Performance
 
 ### Baseline Results (6-layer, 512-dim model)
 
@@ -210,7 +210,7 @@ python train_small_gpt.py \
     --warmup-steps 500     # Learning rate warmup
 ```
 
-### Mixed Language Training
+Mixed Language Training
 
 Train on both languages simultaneously:
 ```bash
@@ -225,7 +225,7 @@ python train_small_gpt.py \
     --epochs 10
 ```
 
-## 📝 Submission Checklist
+Submission Checklist
 
 - [ ] Trained model checkpoint in `model/` directory
 - [ ] Tokenizer files saved with model
@@ -255,7 +255,7 @@ python train_small_gpt.py \
 # Use gradient accumulation (modify script)
 ```
 
-### Slow Training on CPU
+Slow Training on CPU
 ```bash
 # Use smaller model
 --n-layer 4 --n-head 4 --n-embd 256
@@ -273,7 +273,7 @@ pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
 --device cpu
 ```
 
-## 📚 References
+References
 
 - **Hugging Face Transformers**: https://huggingface.co/docs/transformers
 - **IndicNLP**: https://indicnlp.ai4bharat.org/
@@ -281,11 +281,11 @@ pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
   - ai4bharat/IndicBARTSS
   - google/muril-base-cased
 
-## 📄 License
+License
 
 This project is for academic use only as part of CS6320E assignment.
 
-## 👥 Team Information
+Team Information
 
 Update `submission_metadata.json` with your team details:
 - Team members
@@ -295,6 +295,4 @@ Update `submission_metadata.json` with your team details:
 
 ---
 
-**Deadline**: March 11, 2025
-**Course**: CS6320E - Topics in Natural Language Processing
-**Assignment**: Compact Language Model Challenge
+
