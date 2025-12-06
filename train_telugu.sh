@@ -30,7 +30,7 @@ if [[ "$(uname)" == "Darwin" ]]; then
     # macOS - check for MPS (Apple Silicon) or fallback to CPU
     if python3 -c "import torch; exit(0 if torch.backends.mps.is_available() else 1)" 2>/dev/null; then
         DEVICE="mps"
-        echo "✓ Detected Apple Silicon - using MPS (GPU acceleration)"
+        echo "Detected Apple Silicon - using MPS (GPU acceleration)"
     else
         DEVICE="cpu"
         echo "Detected macOS - using CPU"
