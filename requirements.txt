@@ -1,0 +1,33 @@
+# Core dependencies for Compact Language Model Challenge
+# Python 3.8+
+
+# Deep Learning Framework
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Transformers and Tokenizers
+transformers>=4.30.0
+tokenizers>=0.13.0
+sentencepiece>=0.1.99
+
+# Data Processing
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Progress bars and utilities
+tqdm>=4.65.0
+
+# Evaluation and metrics
+scikit-learn>=1.2.0
+
+# Optional: For quantization and optimization
+# accelerate>=0.20.0
+# bitsandbytes>=0.39.0
+
+# Optional: For better performance profiling
+# py-cpuinfo>=9.0.0
+# psutil>=5.9.0
+
+# Optional: For visualization (sample efficiency curves)
+# matplotlib>=3.7.0
+# seaborn>=0.12.0

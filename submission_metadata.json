@@ -1,0 +1,131 @@
+{
+  "team_info": {
+    "team_name": "YOUR_TEAM_NAME",
+    "members": [
+      {
+        "name": "Student Name 1",
+        "email": "student1@university.edu",
+        "student_id": "123456"
+      },
+      {
+        "name": "Student Name 2 (if applicable)",
+        "email": "student2@university.edu",
+        "student_id": "789012"
+      }
+    ]
+  },
+  "submission_info": {
+    "course_id": "CS6320E",
+    "assignment": "Compact Language Model Challenge",
+    "submission_date": "2025-03-11",
+    "submission_format": "git_repo_or_zip"
+  },
+  "model_info": {
+    "architecture": "GPT-2 based / Transformer",
+    "layers": 6,
+    "attention_heads": 8,
+    "embedding_dimension": 512,
+    "total_parameters": "30M (update after training)",
+    "trainable_parameters": "30M (update after training)"
+  },
+  "training_info": {
+    "languages": ["marathi", "telugu"],
+    "training_examples": {
+      "marathi": 6900,
+      "telugu": 5500
+    },
+    "epochs": 10,
+    "batch_size": 16,
+    "learning_rate": 0.0005,
+    "optimizer": "AdamW",
+    "max_sequence_length": 256,
+    "random_seed": 42,
+    "training_time_hours": "UPDATE_AFTER_TRAINING"
+  },
+  "hardware_used": {
+    "platform": "darwin / linux / windows",
+    "gpu_model": "NVIDIA RTX 3090 / Tesla V100 / Apple M1 / etc",
+    "gpu_memory_gb": 24,
+    "cpu_model": "Intel Xeon / AMD Ryzen / Apple M1 / etc",
+    "ram_gb": 32,
+    "cuda_version": "11.8 (if applicable)",
+    "pytorch_version": "2.0.0"
+  },
+  "external_resources": {
+    "pretrained_models": [
+      {
+        "name": "gpt2 / ai4bharat/IndicBARTSS / none",
+        "source": "huggingface",
+        "license": "MIT / Apache 2.0",
+        "usage": "initialization / fine-tuning / tokenizer only"
+      }
+    ],
+    "tokenizers": [
+      {
+        "name": "Custom BPE / SentencePiece / pretrained",
+        "vocab_size": 8000,
+        "trained_on": "provided dataset only"
+      }
+    ],
+    "libraries": [
+      {
+        "name": "transformers",
+        "version": "4.30.0",
+        "license": "Apache 2.0"
+      },
+      {
+        "name": "torch",
+        "version": "2.0.0",
+        "license": "BSD"
+      },
+      {
+        "name": "tokenizers",
+        "version": "0.13.0",
+        "license": "Apache 2.0"
+      }
+    ],
+    "additional_data": "none (only provided training data used)",
+    "external_apis": "none"
+  },
+  "performance_metrics": {
+    "marathi": {
+      "validation_perplexity": "UPDATE_AFTER_EVALUATION",
+      "validation_accuracy": "UPDATE_AFTER_EVALUATION",
+      "cross_entropy": "UPDATE_AFTER_EVALUATION",
+      "bits_per_token": "UPDATE_AFTER_EVALUATION"
+    },
+    "telugu": {
+      "validation_perplexity": "UPDATE_AFTER_EVALUATION",
+      "validation_accuracy": "UPDATE_AFTER_EVALUATION",
+      "cross_entropy": "UPDATE_AFTER_EVALUATION",
+      "bits_per_token": "UPDATE_AFTER_EVALUATION"
+    }
+  },
+  "efficiency_metrics": {
+    "inference_latency_median_ms": "UPDATE_AFTER_MEASUREMENT",
+    "inference_latency_p95_ms": "UPDATE_AFTER_MEASUREMENT",
+    "throughput_tokens_per_second": "UPDATE_AFTER_MEASUREMENT",
+    "peak_gpu_memory_mb": "UPDATE_AFTER_MEASUREMENT",
+    "model_size_mb": "UPDATE_AFTER_TRAINING",
+    "quantized_model_size_mb": "N/A or UPDATE",
+    "flops_per_token": "UPDATE_AFTER_MEASUREMENT"
+  },
+  "reproducibility": {
+    "random_seeds": {
+      "python": 42,
+      "numpy": 42,
+      "torch": 42
+    },
+    "deterministic_mode": true,
+    "code_repository": "git_url_or_zip_file_name",
+    "docker_image": "N/A or docker_hub_link",
+    "conda_environment": "requirements.txt provided"
+  },
+  "ethical_considerations": {
+    "potential_biases": "Telugu and Marathi models trained on news data may reflect biases present in source material",
+    "limitations": "Limited training data (5.5-6.9K examples) may result in poor generalization",
+    "intended_use": "Educational purposes, research, next-token prediction",
+    "misuse_risks": "Should not be used for generating misleading content or impersonating specific writing styles"
+  },
+  "additional_notes": "Add any additional information about the model, training process, or challenges faced"
+}

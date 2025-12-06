@@ -1,0 +1,91 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv
+
+# PyTorch
+*.pth
+*.pt
+*.ckpt
+
+# Model outputs (keep structure, ignore large files)
+model/*/pytorch_model.bin
+model/*/model.safetensors
+model/*/*.bin
+model/*/epoch_*/
+
+# Tokenizers (generated)
+tokenizers/*/tokenizer.json
+tokenizers/*/vocab.txt
+tokenizers/*/merges.txt
+tokenizers/*/vocab.json
+
+# Results and logs
+results/
+logs/
+*.log
+wandb/
+tensorboard/
+
+# Processed data
+processed/
+*.jsonl.tmp
+*.txt.tmp
+train_frac_*.jsonl
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Large files
+*.zip
+*.tar.gz
+*.7z
+
+# Don't ignore dataset folder
+!dataset/
+!dataset/*.jsonl
+
+# Keep important files
+!requirements.txt
+!README.md
+!submission_metadata.json
+!*.py
+!*.sh
