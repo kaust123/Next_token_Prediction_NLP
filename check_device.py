@@ -29,22 +29,22 @@ def check_devices():
     print(f"  PyTorch:  {torch.__version__}")
 
     # CPU
-    print(f"\n✓ CPU: Available")
-    print(f"  Threads: {torch.get_num_threads()}")
+    print(f"\nCPU: Available")
+    print(f"Threads: {torch.get_num_threads()}")
 
     # CUDA
     print(f"\nCUDA:")
     if torch.cuda.is_available():
-        print(f"  ✓ Available")
+        print(f"  Available")
         print(f"  Device count: {torch.cuda.device_count()}")
         print(f"  Current device: {torch.cuda.current_device()}")
         print(f"  Device name: {torch.cuda.get_device_name(0)}")
         print(f"  Memory: {torch.cuda.get_device_properties(0).total_memory / 1e9:.2f} GB")
         recommended = "cuda"
     else:
-        print(f"  ✗ Not available")
+        print(f"Not available")
         if platform.system() == "Darwin":
-            print(f"  Note: CUDA not supported on macOS")
+            print(f"Note: CUDA not supported on macOS")
         else:
             print(f"  Install CUDA-enabled PyTorch:")
             print(f"  pip install torch --index-url https://download.pytorch.org/whl/cu118")
@@ -54,16 +54,16 @@ def check_devices():
     print(f"\nMPS (Apple Silicon):")
     if hasattr(torch.backends, 'mps'):
         if torch.backends.mps.is_available():
-            print(f"  ✓ Available")
-            print(f"  Note: MPS support is experimental")
+            print(f"Available")
+            print(f"Note: MPS support is experimental")
             if recommended == "cpu" and platform.system() == "Darwin":
                 recommended = "mps"
         else:
-            print(f"  ✗ Not available")
+            print(f"Not available")
             if platform.system() == "Darwin":
-                print(f"  Your macOS version may not support MPS")
+                print(f"Your macOS version may not support MPS")
     else:
-        print(f"  ✗ Not supported (PyTorch version too old)")
+        print(f"Not supported (PyTorch version too old)")
 
     # Recommendations
     print("\n" + "="*60)
