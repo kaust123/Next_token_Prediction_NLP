@@ -1,16 +1,16 @@
 {
   "team_info": {
-    "team_name": "YOUR_TEAM_NAME",
+    "team_name": "INVINCIBLES",
     "members": [
       {
-        "name": "Student Name 1",
-        "email": "student1@university.edu",
-        "student_id": "123456"
+        "name": "K Mandal",
+        "email": "",
+        "student_id": ""
       },
       {
-        "name": "Student Name 2 (if applicable)",
-        "email": "student2@university.edu",
-        "student_id": "789012"
+        "name": "S Nandi",
+        "email": "",
+        "student_id": ""
       }
     ]
   },
