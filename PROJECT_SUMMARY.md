@@ -171,7 +171,7 @@ nlp_assignment/
 
 ---
 
-## 📝 What You Still Need to Do
+## What You Still Need to Do
 
 ### Before Training
 - [ ] Review dataset statistics: `python preprocess_data.py --process-all`
