@@ -127,14 +127,14 @@ def main(args):
     tokenizer = AutoTokenizer.from_pretrained(args.model_dir, use_fast=True)
     model = AutoModelForCausalLM.from_pretrained(args.model_dir)
     model.to(device)
-    print("✓ Model loaded\n")
+    print(" Model loaded\n")
 
     # Load dataset
     print(f"Loading dataset from {args.data_file}...")
     dataset = EvalDataset(args.data_file, tokenizer, max_length=args.max_length)
     dataloader = DataLoader(dataset, batch_size=args.batch_size, shuffle=False,
                            collate_fn=collate_fn, num_workers=args.num_workers)
-    print(f"✓ Loaded {len(dataset)} examples\n")
+    print(f" Loaded {len(dataset)} examples\n")
 
     # Evaluate
     print("Evaluating model...")
@@ -170,7 +170,7 @@ def main(args):
         with open(output_path, 'w') as f:
             json.dump(results, f, indent=2)
 
-        print(f"\n✓ Results saved to {output_path}")
+        print(f"\n Results saved to {output_path}")
 
 
 if __name__ == '__main__':
