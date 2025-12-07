@@ -1,6 +1,6 @@
 # macOS Setup Guide
 
-## ⚠️ Important: CPU Training on macOS
+## Important: CPU Training on macOS
 
 Your Mac doesn't have CUDA support (CUDA is NVIDIA-only). The scripts have been automatically configured to use **CPU** on macOS.
 
@@ -19,7 +19,7 @@ This will show:
 
 ---
 
-## 🚀 Quick Start for macOS
+## Quick Start for macOS
 
 ### 1. Setup
 ```bash
@@ -61,7 +61,7 @@ bash train_telugu.sh
 
 ---
 
-## ⚡ Performance Optimization for CPU
+## Performance Optimization for CPU
 
 ### Model Size Recommendations
 
@@ -114,7 +114,7 @@ bash train_telugu.sh
 
 ---
 
-## 🍎 Apple Silicon (M1/M2/M3) - MPS Support
+## Apple Silicon (M1/M2/M3) - MPS Support
 
 If you have Apple Silicon, you can try using MPS (Metal Performance Shaders):
 
@@ -130,7 +130,7 @@ python train_small_gpt.py --device mps
 
 ---
 
-## 🔄 Alternative: Use Cloud GPU
+## Alternative: Use Cloud GPU
 
 If training on CPU is too slow, consider:
 
@@ -147,7 +147,7 @@ If training on CPU is too slow, consider:
 
 ---
 
-## 🧪 Test Your Setup
+## Test Your Setup
 
 ```bash
 # 1. Check device
@@ -172,7 +172,7 @@ bash train_marathi.sh
 
 ---
 
-## 📊 Expected Training Times (M1/M2 Mac, CPU)
+## Expected Training Times (M1/M2 Mac, CPU)
 
 | Dataset | Model Size | Epochs | Estimated Time |
 |---------|------------|--------|----------------|
@@ -185,7 +185,7 @@ bash train_marathi.sh
 
 ---
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### "AssertionError: Torch not compiled with CUDA enabled"
 ✓ **Fixed!** Scripts now auto-detect macOS and use CPU.
@@ -217,7 +217,7 @@ bash train_marathi.sh
 
 ---
 
-## ✅ Verification Checklist
+## Verification Checklist
 
 - [ ] Run `python check_device.py` - confirms CPU available
 - [ ] Run `bash quick_start.sh` - verifies setup
@@ -227,7 +227,7 @@ bash train_marathi.sh
 
 ---
 
-## 📚 Additional Resources
+## Additional Resources
 
 - PyTorch on Mac: https://pytorch.org/get-started/locally/
 - Apple Silicon Performance: https://pytorch.org/blog/introducing-accelerated-pytorch-training-on-mac/
@@ -235,4 +235,4 @@ bash train_marathi.sh
 
 ---
 
-**You're all set for CPU training on macOS! 🚀**
+**You're all set for CPU training on macOS! **
