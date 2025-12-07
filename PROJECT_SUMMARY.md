@@ -1,6 +1,6 @@
 # Project Setup Summary - NLP Compact Language Model Challenge
 
-## ✅ All Issues Fixed and Files Created
+## All Issues Fixed and Files Created
 
 ### 🔧 Issues Fixed
 
@@ -9,7 +9,7 @@
    - Added fallback for flat JSON structure
    - Works with both training and evaluation scripts
 
-### 📁 New Files Created
+### New Files Created
 
 #### Core Scripts
 1. **[preprocess_data.py](preprocess_data.py)** - Data preprocessing and statistics
@@ -65,7 +65,7 @@
 
 ---
 
-## 🚀 Quick Start Guide
+## Quick Start Guide
 
 ### 1. Initial Setup
 ```bash
@@ -123,7 +123,7 @@ python measure_performance.py \
 
 ---
 
-## 📊 Project Structure
+## Project Structure
 
 ```
 nlp_assignment/
@@ -203,7 +203,7 @@ nlp_assignment/
 
 ---
 
-## 🎯 Key Metrics to Report
+## Key Metrics to Report
 
 Based on assignment requirements, you must report:
 
@@ -214,16 +214,16 @@ Based on assignment requirements, you must report:
 - ✓ Token accuracy - from [evaluate.py](evaluate.py)
 
 ### Efficiency Metrics
-- ✓ Parameter counts - from [measure_performance.py](measure_performance.py)
-- ✓ Inference latency (median, p95) - from [measure_performance.py](measure_performance.py)
-- ✓ Throughput (tokens/sec) - from [measure_performance.py](measure_performance.py)
-- ✓ Peak GPU memory - from [measure_performance.py](measure_performance.py)
-- ⚠️ FLOPs/MACs - Need to add calculation
-- ⚠️ Sample efficiency curve - Use [sample_efficiency.py](sample_efficiency.py)
+- Parameter counts - from [measure_performance.py](measure_performance.py)
+- Inference latency (median, p95) - from [measure_performance.py](measure_performance.py)
+- Throughput (tokens/sec) - from [measure_performance.py](measure_performance.py)
+- Peak GPU memory - from [measure_performance.py](measure_performance.py)
+- FLOPs/MACs - Need to add calculation
+- Sample efficiency curve - Use [sample_efficiency.py](sample_efficiency.py)
 
 ---
 
-## 💡 Tips for Success
+## Tips for Success
 
 1. **Start Small**: Train tiny model first to verify pipeline works
 2. **Monitor GPU**: Use `nvidia-smi` to track GPU usage
@@ -234,7 +234,7 @@ Based on assignment requirements, you must report:
 
 ---
 
-## 🐛 Common Issues & Solutions
+## Common Issues & Solutions
 
 ### Issue: Out of Memory
 **Solution**: Reduce `--batch-size` or `--max-length`
@@ -258,7 +258,7 @@ pip install -r requirements.txt
 
 ---
 
-## 📞 Need Help?
+## Need Help?
 
 1. Check [README.md](README.md) for detailed instructions
 2. Review assignment PDF for requirements
@@ -267,7 +267,7 @@ pip install -r requirements.txt
 
 ---
 
-## ⏰ Timeline Suggestion
+## Timeline Suggestion
 
 - **Week 1**: Setup, data exploration, tokenizer training
 - **Week 2**: Model training experiments, hyperparameter tuning
@@ -278,7 +278,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🎉 You're All Set!
+## You're All Set!
 
 Everything is now properly organized in the `nlp_assignment/` folder. All scripts are ready to use, and the data loading issue is fixed. Good luck with your training!
 
