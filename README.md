@@ -194,7 +194,7 @@ Expected Performance
 
 *Note: Actual results depend on training configuration and hardware*
 
-## �� Advanced Usage
+## Advanced Usage
 
 ### Custom Model Architecture
 
@@ -242,7 +242,7 @@ Submission Checklist
   - [ ] External resources used
   - [ ] Ethical considerations and limitations
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Out of Memory Error
 ```bash
