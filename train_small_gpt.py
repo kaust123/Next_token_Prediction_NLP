@@ -12,12 +12,10 @@ import math
 import os
 import random
 from pathlib import Path
-
 import torch
 from torch.utils.data import Dataset, DataLoader
 from transformers import (AutoConfig, AutoModelForCausalLM, AutoTokenizer,
                           get_linear_schedule_with_warmup)
-
 
 class JsonlDataset(Dataset):
     def __init__(self, path, tokenizer, max_length=256):
